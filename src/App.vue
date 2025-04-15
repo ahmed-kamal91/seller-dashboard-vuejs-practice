@@ -1,26 +1,41 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="container">
+    <HeaderSection></HeaderSection>
+    <MainSection :products="productsList"></MainSection>
+  </div>
+  <FooterSection></FooterSection>
+
+
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import { useProductStore } from './stores/productStore.js'
+import FooterSection from './components/FooterSection.vue';
+import HeaderSection from './components/HeaderSection.vue';
+import MainSection from './components/MainSection.vue';
+import products from './../products.js'
+import { computed } from 'vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HeaderSection,
+    MainSection,
+    FooterSection
+  },
+  setup() {
+    // get container + store data
+    const store = useProductStore()
+    store.setInitialProducts(products) 
+
+    return {
+    productsList: computed(() => store.products) 
   }
+  }
+
+
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+<!-- how to send produc to the user, I think using parenting...using one way binding v-bind -->
+
