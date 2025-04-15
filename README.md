@@ -2,6 +2,11 @@
 
 This project is a practice seller dashboard built using **Vue.js**, designed to mimic a simple e-commerce seller panel. It allows sellers to manage their products by adding and removing them. The project includes validation, reusable components, and uses **Pinia** for state management.
 
+## 🖼️ Demo
+
+![image](https://github.com/user-attachments/assets/5dbbfdd6-b6fa-4fc8-8e0f-0db4671a6244)
+
+
 ## 🚀 Features
 
 - Add and remove products
