@@ -4,6 +4,7 @@ This project is a practice seller dashboard built using **Vue.js**, designed to 
 
 ## 🖼️ Demo
 
+Live Hosting: https://ahmed-kamal91.github.io/seller-dashboard-vuejs-practice/
 ![image](https://github.com/user-attachments/assets/5dbbfdd6-b6fa-4fc8-8e0f-0db4671a6244)
 
 
