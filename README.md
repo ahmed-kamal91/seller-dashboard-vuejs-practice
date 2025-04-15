@@ -1,24 +1,50 @@
-# day2-task-one-app
+# 🛍️ Vue.js Seller Dashboard (Practice Project)
 
-## Project setup
-```
-npm install
-```
+This project is a practice seller dashboard built using **Vue.js**, designed to mimic a simple e-commerce seller panel. It allows sellers to manage their products by adding and removing them. The project includes validation, reusable components, and uses **Pinia** for state management.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## 🚀 Features
 
-### Compiles and minifies for production
-```
-npm run build
-```
+- Add and remove products
+- Form validation (prevents empty inputs)
+- Component-based architecture (Header, Footer, Main, Aside)
+- Sidebar with navigation and an "Add Product" button
+- State management with **Pinia**
 
-### Lints and fixes files
-```
-npm run lint
-```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## 📦 Getting Started
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/vue-seller-dashboard.git
+   ```
+2. Navigate to the project folder:
+   ```bash
+   cd vue-seller-dashboard
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+4. Run the development server:
+   ```bash
+   npm run dev
+   ```
+
+## 🛠️ Technologies Used
+
+- Vue.js 3 (Composition API)
+- Pinia (state management)
+- Vite (development environment)
+- HTML5 & CSS3
+
+## ✅ Validation Details
+
+- The form for adding products checks for empty fields and prevents submission if validation fails.
+
+## 📄 License
+
+MIT License
+
+---
+
+> This project was created as a learning exercise to explore Vue.js, component-based design, and state management with Pinia.
